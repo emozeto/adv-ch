@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper {
+  width: 80%;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: stretch;
+    justify-content: center;
+    border: 1px solid #ccc;
+    & > div:first-child {
+      border-right: 1px solid #ccc;
+    }
+
+    &.info {
+      padding: 2rem;
+      justify-content: flex-start;
+      flex-direction: column;
+      border-bottom: none;
+    }
+  }
+}
+
+.hint {
+  font-size: 10px;
+}
+
+i {
+  font-style: italic;
+}
